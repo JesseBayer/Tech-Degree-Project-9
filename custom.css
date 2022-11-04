@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(26, 25, 25);
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.jumbotron {
+    background-image: url(img/rawImage.jpg);
+    background-position: center center;
+    background-size: 100%;
+    padding: 5.5em;
+}
+
+.lead {
+    padding-top: 40px;
+}
