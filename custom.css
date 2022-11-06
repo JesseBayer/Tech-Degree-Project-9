@@ -1,9 +1,10 @@
+
 body {
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(44, 43, 43);
 }
 
 .nav-link {
-    color: aquamarine;
+    color: rgb(101, 144, 236);
 }
 
 .jumbotron {
@@ -15,4 +16,35 @@ body {
 
 .lead {
     padding-top: 40px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 19vw;
+    object-fit: cover;
+}
+
+.about {
+    background-color: rgb(56, 54, 54);
+}
+
+.about p {
+    padding-top: 2rem;
+    font-size: 18px;
+}
+
+.carousel-item img {
+    object-fit:contain;
+    object-position: center;
+    height: 40vh;
+    overflow: hidden;
+}
+
+/* *{
+    outline: 1px solid red;
+} */
+
+.row {
+    padding-right: 0px;
+    margin-right: 0px;
 }
