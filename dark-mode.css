@@ -1,0 +1,48 @@
+[data-theme="dark"] {
+  background-color: rgb(255, 255, 255) !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .navbar-dark {
+  background-color: rgb(231, 231, 231) !important;
+}
+
+[data-theme="dark"] .text-bg-dark {
+  background-color: rgb(245, 240, 240) !important;
+}
+
+[data-theme="dark"] .bg-dark {
+  background-color: rgb(231, 231, 231) !important;
+}
+
+[data-theme="dark"] .bg-secondary {
+  background-color: rgb(231, 231, 231) !important;
+}
+
+[data-theme="dark"] .text-light {
+  color: rgb(0, 0, 0) !important;
+}
+
+[data-theme="dark"] .svgImg {
+  fill: rgb(0, 0, 0) !important;
+}
+
+[data-theme="dark"] .navbar a {
+  color: rgb(0, 0, 0) !important;
+}
+
+[data-theme="dark"] .DarkMode label {
+  color: rgb(0, 0, 0) !important;
+}

@@ -9,9 +9,11 @@ body {
 
 .jumbotron {
     background-image: url(img/rawImage.jpg);
-    background-position: center center;
-    background-size: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
     padding: 5.5em;
+    color: white;
 }
 
 .lead {
@@ -24,12 +26,8 @@ body {
     object-fit: cover;
 }
 
-.about {
-    background-color: rgb(56, 54, 54);
-}
-
 .about p {
-    padding-top: 2rem;
+    padding: 2rem;
     font-size: 18px;
 }
 
@@ -47,4 +45,36 @@ body {
 .row {
     padding-right: 0px;
     margin-right: 0px;
+}
+
+.container-fluid,
+.container-full {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+}
+
+.projects,
+#about,
+#carousel,
+#contact {
+    padding-left: 12px;
+}
+
+#carousel {
+    padding-bottom: 50px;
+}
+
+#contact {
+    display: none;
+}
+
+.DarkMode {
+    padding-left: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        min-height: 360px;
+    }
 }

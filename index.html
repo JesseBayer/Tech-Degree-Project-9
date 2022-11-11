@@ -8,13 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="dark-mode.css">
         <link rel="stylesheet" href="custom.css">
     </head>
-    <body>
+    <body class="container-fluid">
         <!-- NavBar -->
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+            <div class="">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -24,13 +25,24 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <button type="button" class="btn btn-outline-primary" id="contactBtn">Contact</button>
+                  </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="DarkMode">
+                    <div class="nav-link">
+                      <div class="custom-control custom-switch form-check form-switch">
+                        <input type="checkbox" class="custom-control-input form-check-input" id="darkSwitch">
+                        <label class="custom-control-label" for="darkSwitch">Light Switch</label>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -39,8 +51,34 @@
 
         <!-- /NavBar -->
 
+        <!-- Contact -->
+          <div class=" mb-5" id="contact">
+            <div class="row">
+                <div class="col-l-12 text-bg-dark p-3 ps-5 text-light">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-l-6 text-bg-dark p-3 ps-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin svgImg" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg>
+                    <a href="https://www.linkedin.com/in/jesse-bayer-654b99182/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-l-6 text-bg-dark p-3 ps-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope svgImg" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                    <a href = "mailto: jessebayer53@gmail.com" target="_blank">Email</a>
+                </div>
+            </div>
+          </div>
+        <!-- /Contact -->
+
         <!-- Jumbotron -->
-        <div class="jumbotron bg-secondary text-light">
+        <div class="jumbotron bg-secondary">
             <div class="text-start">
             <h1 class="display-4">Hi, I'm Jesse.</h1>
             <p class="lead "><strong>I'm a Junior Developer From Houston, Texas.</strong></p>
@@ -49,9 +87,9 @@
         <!-- Jumbotron -->
         
         <!-- Main Content -->
-        <div class="container-full">
+        <div class=" projects">
             <div class="row">
-              <div class="col-l-12 text-bg-dark p-3 ps-5">
+              <div class="col-l-12 text-bg-dark p-3 ps-5 text-light">
                 <h2>Projects</h2>
               </div>
             </div>
@@ -60,7 +98,7 @@
 
         
       <!-- Cards -->
-        <div class="container-full px-5 pt-5 w-75 mx-auto">
+        <div class=" px-5 pt-5 w-75 mx-auto" id="projects">
           <div class="row">
               <div class="col-xl-4 mb-4">
                   <div class="card bg-dark">
@@ -69,8 +107,8 @@
                       <div class="card-body">
                           <h5 class="card-title text-light">Online Registration Form</h5>
     
-                          <a href="#" class="btn btn-outline-primary btn-m col-12">
-                              Card link
+                          <a href="img/Online Registration form/Tech-Degree-Project-3/Tech_Degree_project_3/Tech Degree Project 3/index.html" class="btn btn-outline-primary btn-m col-12" target="_blank">
+                              Demo
                           </a>
                               <i class="far fa-heart"></i></a>
                       </div>
@@ -83,8 +121,8 @@
                       <div class="card-body">
                           <h5 class="card-title text-light">Web Style Guide</h5>
                             
-                          <a href="#" class="btn btn-outline-primary btn-m col-12">
-                              Card link
+                          <a href="img/Web Style Guide/Tech-Degree-Project-4/Tech-Degree-Project-4/index.html" target="_blank" class="btn btn-outline-primary btn-m col-12">
+                              Demo
                           </a>
                               <i class="far fa-heart"></i></a>
                       </div>
@@ -97,8 +135,8 @@
                     <div class="card-body">
                         <h5 class="card-title text-light">Interactive Photo Gallery</h5>
                           
-                        <a href="#" class="btn btn-outline-primary btn-m col-12">
-                            Card link
+                        <a href="img/Photo Gallery/Tech-degree-project-5/tech-degree-project-5/index.html" target="_blank" class="btn btn-outline-primary btn-m col-12">
+                            Demo
                         </a>
                             <i class="far fa-heart"></i></a>
                     </div>
@@ -112,8 +150,8 @@
                       <h5 class="card-title text-light">Gameshow App</h5>
 
                         
-                      <a href="#" class="btn btn-outline-primary btn-m col-12">
-                          Card link
+                      <a href="img/Gameshow app/Tech-Degree-Project-6/index.html" target="_blank" class="btn btn-outline-primary btn-m col-12">
+                          Demo
                       </a>
                           <i class="far fa-heart"></i></a>
                   </div>
@@ -127,8 +165,8 @@
                     <h5 class="card-title text-light">Web App Dashboard</h5>
 
                       
-                    <a href="#" class="btn btn-outline-primary btn-m col-12">
-                        Card link
+                    <a href="img/Webapp dashboard/Tech-Degree-Project-7/web_app_dashboard_v3.2/index.html" target="_blank" class="btn btn-outline-primary btn-m col-12">
+                        Demo
                     </a>
                         <i class="far fa-heart"></i></a>
                 </div>
@@ -141,8 +179,8 @@
               <div class="card-body">
                   <h5 class="card-title text-light">Employee Directory</h5>
                     
-                  <a href="#" class="btn btn-outline-primary btn-m col-12">
-                      Card link
+                  <a href="img/Employee Directory/Tech-Degree-Project-8/index.html" target="_blank" class="btn btn-outline-primary btn-m col-12">
+                      Demo
                 </a>
                   
                       <i class="far fa-heart"></i></a>
@@ -154,17 +192,17 @@
       <!-- /Cards -->
 
       <!-- About -->
-      <div class="container-full">
+      <div id="about">
         <div class="row">
-          <div class="col-l-12 text-bg-dark p-3 ps-5">
+          <div class="col-l-12 text-bg-dark p-3 ps-5 text-light">
             <h2>About</h2>
         </div>
       </div>
     </div>
 
-    <div class="container-full">
+    <div id="about">
         <div class="row">
-            <div class="col-l-12 about p-3 ps-5">
+            <div class="col-l-12 about p-3 bg-secondary">
                 <p class="text-light">My name is Jesse Bayer. I'm a Junior Web Developer from Houston, Texas. I've been an In-Home care giver for about 7 years now and I want to persue a different career. I had a fascination with computers from a very young age so learning web design felt like the right course of action. I want to make beautiful websites and continue my learning.
                 </p>
             </div>
@@ -174,9 +212,9 @@
 
     <!-- Carousel -->
 
-    <div class="container-full">
+    <div id="carousel">
         <div class="row">
-          <div class="col-l-12 text-bg-dark p-3 ps-5">
+          <div class="col-l-12 text-bg-dark p-3">
             
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -220,34 +258,11 @@
     </div>
 
     <!-- /Carousel -->
-
-    <!-- Footer -->
-    <div class="container-full mb-5">
-        <div class="row">
-            <div class="col-l-12 text-bg-dark p-3 ps-5">
-                <h2>Contact</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-l-12 text-bg-dark p-3 ps-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                  </svg>
-                <a href="https://www.linkedin.com/in/jesse-bayer-654b99182/" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-l-12 text-bg-dark p-3 ps-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                  </svg>
-                <a href = "mailto: jessebayer53@gmail.com" target="_blank">Email</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- /Footer -->
         
     <!-- /Main Content -->
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="dark-mode-switch.min.js"></script>
+    <script src="slide.js"></script>
+  </body>
 </html>
