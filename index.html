@@ -9,6 +9,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="dark-mode.css">
+        <link rel="stylesheet" href="LightBox/lightbox.css">
         <link rel="stylesheet" href="custom.css">
     </head>
     <body class="container-fluid">
@@ -60,7 +61,7 @@
             </div>
             <div class="row">
                 <div class="col-l-6 text-bg-dark p-3 ps-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin svgImg" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/3000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin svgImg" viewBox="0 0 16 16">
                         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                       </svg>
                     <a href="https://www.linkedin.com/in/jesse-bayer-654b99182/" target="_blank">LinkedIn</a>
@@ -68,7 +69,7 @@
             </div>
             <div class="row">
                 <div class="col-l-6 text-bg-dark p-3 ps-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope svgImg" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/3000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope svgImg" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
                       </svg>
                     <a href = "mailto: jessebayer53@gmail.com" target="_blank">Email</a>
@@ -98,7 +99,7 @@
 
         
       <!-- Cards -->
-        <div class=" px-5 pt-5 w-75 mx-auto" id="projects">
+        <div class=" px-5 pt-5 mx-auto" id="projects">
           <div class="row">
               <div class="col-xl-4 mb-4">
                   <div class="card bg-dark">
@@ -212,47 +213,63 @@
 
     <!-- Carousel -->
 
-    <div id="carousel">
-        <div class="row">
-          <div class="col-l-12 text-bg-dark p-3">
-            
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/Online Registration form/9c8fee1641c361e1cd785596ac264a99.png" class="d-block w-100" alt="...">
+    <div class="lightbox"></div>
+      <div id="carousel">
+          <div class="row">
+            <div class="col-l-12 text-bg-dark p-3">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <a href="img/Online Registration form/9c8fee1641c361e1cd785596ac264a99.png" data-lightbox="carousel">
+                        <img src="img/Online Registration form/9c8fee1641c361e1cd785596ac264a99.png"class="d-block w-100" alt="...">
+                      </a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="img/Web Style Guide/1fc3648d926e40eab231108faa3c512a.png" data-lightbox="carousel"> 
+                        <img src="img/Web Style Guide/1fc3648d926e40eab231108faa3c512a.png" class="d-block w-100" alt="...">
+                      </a>                 
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="img/Photo Gallery/d95d2484042da1cd1b5676ea64105668.jpg" data-lightbox="carousel">
+                        <img src="img/Photo Gallery/d95d2484042da1cd1b5676ea64105668.jpg" class="d-block w-100" alt="...">
+                      </a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="img/Photo Gallery/aa808ed0ba2116096bd6d77b384ea8ae.jpg" data-lightbox="carousel">
+                        <img src="img/Photo Gallery/aa808ed0ba2116096bd6d77b384ea8ae.jpg" class="d-block w-100" alt="...">
+                      </a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="img/Gameshow app/e7625aa8870bba2a4ce123ce0fe9656a.png" data-lightbox="carousel">
+                        <img src="img/Gameshow app/e7625aa8870bba2a4ce123ce0fe9656a.png" class="d-block w-100" alt="...">
+                      </a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="img/Webapp dashboard/8769e61fd5ef1bf254eb7b0f09c2f555.png" data-lightbox="carousel">
+                        <img src="img/Webapp dashboard/8769e61fd5ef1bf254eb7b0f09c2f555.png" class="d-block w-100" alt="...">
+                      </a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="img/Employee Directory/6ebe90c1872cb2d77dd415eb4049991a.png" data-lightbox="carousel">
+                        <img src="img/Employee Directory/6ebe90c1872cb2d77dd415eb4049991a.png" class="d-block w-100" alt="...">
+                      </a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <a href="img/Employee Directory/b94df39b84e1e19e982c8d8b3da6d79c.png" data-lightbox="carousel">
+                        <img src="img/Employee Directory/b94df39b84e1e19e982c8d8b3da6d79c.png" class="d-block w-100" alt="...">
+                      </a>
+                    </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/Web Style Guide/1fc3648d926e40eab231108faa3c512a.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Photo Gallery/d95d2484042da1cd1b5676ea64105668.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Photo Gallery/aa808ed0ba2116096bd6d77b384ea8ae.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Gameshow app/e7625aa8870bba2a4ce123ce0fe9656a.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Webapp dashboard/8769e61fd5ef1bf254eb7b0f09c2f555.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Employee Directory/6ebe90c1872cb2d77dd415eb4049991a.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Employee Directory/b94df39b84e1e19e982c8d8b3da6d79c.png" class="d-block w-100" alt="...">
-                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
+          </div>
         </div>
       </div>
     </div>
@@ -263,6 +280,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     <script src="dark-mode-switch.min.js"></script>
+    <script src="LightBox/lightbox.js"></script>
     <script src="slide.js"></script>
   </body>
 </html>
