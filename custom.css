@@ -70,10 +70,6 @@ body {
     display: none;
 }
 
-.DarkMode {
-    padding-left: auto;
-}
-
 @media screen and (min-width: 1200px) {
     .card {
         min-height: 360px;
